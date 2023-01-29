@@ -2,7 +2,7 @@
 
 ### Webot version used in this project: Webots R2023a
 
-#### Objective
+### Objective
 
 <p>The objectives of this project have been listed below.</p>
 
@@ -12,7 +12,7 @@
     <li>To create a robot that will go to a specified location to water the plants</li>
   </ul>
   
-#### How to open project
+### How to open project
 
 <p>To open this project:</p>
   
