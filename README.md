@@ -18,3 +18,7 @@
     <li>CONTROL+S: Water the plant</li>
     <li>CONTROL+A: Arm return to position</li>
   </ol>
+
+### Demo Video Link
+
+<p>This is our <a href="https://drive.google.com/drive/folders/1mY--3TqlnX1gfmFwQ95KgqN0qKM7FRb8?usp=share_link" title="demo">demo video</a></p>
