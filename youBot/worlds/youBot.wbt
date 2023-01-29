@@ -1,0 +1,142 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/kuka/youbot/protos/Youbot.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/rocks/protos/Rock17cm.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/plants/protos/PottedTree.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/garden/protos/WateringCan.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.23323530641695883 0.2276321055843283 -0.9454019866426306 1.6511717945336464
+  position 1.6002362183541823 9.736623319033548 3.73693097890736
+}
+TexturedBackground {
+  texture "mars"
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 0 1 0 0
+  floorSize 10 10
+  floorAppearance Parquetry {
+    type "dark strip"
+  }
+}
+DEF ROCK Rock17cm {
+  translation -0.03 1.26 -3.94207e-06
+  rotation 0 1 0 4.692820414042842e-06
+  color 0.6 0.1 0
+}
+Rock17cm {
+  translation 0.61 -0.7 0
+  name "rock 17 cm(2)"
+  color 0.6 0.1 0
+}
+Rock17cm {
+  translation 0.33 -2.05 0
+  rotation 0 1 0 0
+  name "rock 17 cm(1)"
+  color 0.6 0.1 0
+}
+Youbot {
+  translation -0.0395306 -0.0105552 0.100139
+  rotation 5.018649996437751e-07 -3.7674299973258695e-05 0.9999999992901978 -1.5523553071795861
+  controller "joe_yw_controller"
+  controllerArgs [
+    ""
+  ]
+  bodySlot [
+    GPS {
+    }
+    Compass {
+    }
+    DistanceSensor {
+      translation -0.33 -0.2 0
+      rotation 0 0 1 0.7853979999999999
+      name "backDS2"
+    }
+    DistanceSensor {
+      translation -0.36 0.2 0
+      rotation 0 0 1 -0.523595307179586
+      name "backDS3"
+    }
+    DistanceSensor {
+      translation -0.36 0 0
+      rotation 0 1 0 0
+      name "backDS1"
+    }
+    DistanceSensor {
+      translation -0.22 0.27 -0.00668812
+      rotation 0 0 1 -1.6174353071795862
+      name "leftDS3"
+    }
+    DistanceSensor {
+      translation 0.01 0.27 -0.00668812
+      rotation 0 0 1 -1.6174353071795862
+      name "leftDS2"
+    }
+    DistanceSensor {
+      translation 0.2 0.27 -0.00668812
+      rotation 0 0 1 -1.6174353071795862
+      name "leftDS1"
+    }
+    DistanceSensor {
+      translation -0.22 -0.17 -0.00668812
+      rotation 9.58979e-09 9.15261e-09 1 -1.6174353071795862
+      name "rightDS3"
+    }
+    DistanceSensor {
+      translation 0.01 -0.17 -0.00668812
+      rotation 9.58979e-09 9.15261e-09 1 -1.6174353071795862
+      name "rightDS2"
+    }
+    DistanceSensor {
+      translation 0.2 -0.17 -0.00668812
+      rotation 0 0 1 -1.6174353071795862
+      name "rightDS1"
+    }
+    DistanceSensor {
+      translation 0.35 0 0
+      rotation 0 1 0 0
+      name "frontDS1"
+    }
+    DistanceSensor {
+      translation 0.28 0.14 0
+      rotation 0 0 1 0.7853979999999999
+      name "frontDS2"
+    }
+    DistanceSensor {
+      translation 0.28 -0.14 0
+      rotation 0 0 1 -0.523595307179586
+      name "frontDS3"
+    }
+  ]
+}
+Solid {
+  children [
+    PottedTree {
+      translation 3.57 3.66 0
+    }
+  ]
+}
+Solid {
+  translation 0.64 -0.2 0
+  scale 0.6 0.6 0.6
+  children [
+    WateringCan {
+      enablePhysics TRUE
+    }
+  ]
+  name "solid(1)"
+  boundingObject Cylinder {
+    height 0.01
+    radius 0.05
+  }
+  physics Physics {
+  }
+}
