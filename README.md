@@ -2,7 +2,19 @@
 
 ### Webot version used in this project: Webots R2023a
 
-<p>To open the project:</p>
+#### Objective
+
+<p>The objectives of this project have been listed below.</p>
+
+  <ul>
+    <li>To create a robot that will rotate its arm to grab the water can in order to  water the plant automatically</li>
+    <li>To create a robot that will avoid obstacles automatically</li>
+    <li>To create a robot that will go to a specified location to water the plants</li>
+  </ul>
+  
+#### How to open project
+
+<p>To open this project:</p>
   
   <ol>
     <li>Open Webot application</li>
