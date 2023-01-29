@@ -46,7 +46,7 @@ Rock17cm {
 Youbot {
   translation -0.0395306 -0.0105552 0.100139
   rotation 5.018649996437751e-07 -3.7674299973258695e-05 0.9999999992901978 -1.5523553071795861
-  controller "joe_yw_controller"
+  controller "main_controller"
   controllerArgs [
     ""
   ]
